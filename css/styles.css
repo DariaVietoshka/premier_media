@@ -413,5 +413,10 @@ hr {
     height: auto;
   }
 
+  .film-card .poster-wrapper {
+    min-height: 200px;
+    height: auto;
+  }
+
 
 }
