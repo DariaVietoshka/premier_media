@@ -445,7 +445,7 @@ hr {
   .parallax {
     background-attachment: unset;
   }
-  
+
   #slide-out {
     display: block;
   }
@@ -519,5 +519,12 @@ hr {
   .film-card .poster-wrapper {
     min-height: 200px;
     height: auto;
+  }
+  
+  #footer {
+    height: auto;
+    line-height: 30px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
