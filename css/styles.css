@@ -460,6 +460,7 @@ hr {
 @media (max-width: 845px) {
   .parallax {
     background-attachment: unset;
+    background-image: url('../assets/tv.jpg');
   }
 
   #slide-out {
