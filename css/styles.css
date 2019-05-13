@@ -10,7 +10,8 @@ body {
 }
 
 .parallax {
-  background-image: url('../assets/intro.jpg');
+  /* background-image: url('../assets/intro.jpg'); */
+  background-image: url('../assets/mixed.png');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -125,6 +126,13 @@ hr {
   height: 100%;
 }
 
+/* #intro:hover h1 {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+} */
+
 #intro h1 {
   color: #fff;
   letter-spacing: 2px;
@@ -142,6 +150,9 @@ hr {
   left: 0;
   right: 0;
   z-index: 2;
+  /* transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition: .3s ease-in-out; */
 }
 
 #intro img {
