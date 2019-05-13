@@ -158,11 +158,11 @@ hr {
   transition: all .5s ease;
 }
 
-.overlay:hover {
+/* .overlay:hover {
   transition: all .5s ease;
   background-color: rgba(34, 34, 34, 0.3);
   background-size: 10px;
-}
+} */
 
 #projects,
 #produced,
@@ -520,7 +520,7 @@ hr {
     min-height: 200px;
     height: auto;
   }
-  
+
   #footer {
     height: auto;
     line-height: 30px;
