@@ -11,7 +11,7 @@ body {
 
 .parallax {
   /* background-image: url('../assets/intro.jpg'); */
-  background-image: url('../assets/mixed.png');
+  background-image: url('../assets/mixed.jpg');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
