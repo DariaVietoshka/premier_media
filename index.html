@@ -1,34 +1,50 @@
 <html>
   <head>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="js/smoothscroll.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <title>Premier Media</title>
+    <title>PREMIER-MEDIA</title>
   </head>
-
 
   <body>
 
       <div class="navbar">
-        <a href="/" id="logo">PREMIER MEDIA</a>
+        <img src="assets/logo.png" class="image-logo">
+        <a href="#" id="logo">PREMIER-MEDIA</a>
 
-        <ul>
-          <li><a id="to-projects">Projects</a></li>
-          <li><a id="to-portfolio">Porfolio</a></li>
-          <li><a id="to-distribution">Distribution</a></li>
-          <li><a id="to-about">About</a></li>
-          <li><a id="to-team">Team</a></li>
-          <li><a id="to-contacts">Contacts</a></li>
+        <ul class="desktop-menu">
+          <li><a class="to-projects">Projects</a></li>
+          <li><a class="to-produced">Produced</a></li>
+          <li><a class="to-distribution">Distribution</a></li>
+          <li><a class="to-about">About</a></li>
+          <li><a class="to-team">Team</a></li>
+          <li><a class="to-contacts">Contacts</a></li>
         </ul>
+
+        <div id='slide-out'>
+          <ul>
+            <li><a class="to-projects">Projects</a></li>
+            <li><a class="to-produced">Produced</a></li>
+            <li><a class="to-distribution">Distribution</a></li>
+            <li><a class="to-about">About</a></li>
+            <li><a class="to-team">Team</a></li>
+            <li><a class="to-contacts">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div onclick="toggleSideNav()" class="nav-icon menu" id="menu">
+          <div></div>
+        </div>
+
       </div>
 
-      <div id="intro">
-        <img src="assets/intro.jpg">
-
+      <div class="parallax" id="intro">
         <div class="overlay">
           <h1>Film production & distribution company</h1>
-          <a id="to-projects-from-arrow" class="arrow-container">
+          <a id="to-projects-from-arrow" class="arrow-container pulse">
             <div class="arrow"></div>
             <div class="arrow"></div>
             <div class="arrow"></div>
@@ -36,7 +52,8 @@
         </div>
       </div>
 
-      <h1 class="section-title" id="projects-title">Projects</h1>
+      <div id="projects-start"></div>
+      <h1 class="section-title">Projects</h1>
       <hr>
       <div id="projects">
         <div class="film-card">
@@ -120,19 +137,23 @@
         </div>
       </div>
 
-
-      <h1 class="section-title" id="portfolio-title">Portfolio</h1>
+      <div id="produced-start"></div>
+      <h1 class="section-title">Produced</h1>
       <hr>
-      <div id="portfolio">
+      <div id="produced">
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/portfolio/skazky.jpg'>
+            <img src='assets/produced/skazky.jpg'>
           </div>
           <div class="description">
             <h2>MADTALES. UNPUBLSHED / СКАЗКИ. НЕОПУБЛ.</h2>
             <p>
               <strong>Director:</strong>
               Ruslan Aritovych
+            </p>
+            <p>
+              <strong>Script:</strong>
+                Oleksandr Shapiro
             </p>
             <p>
               <strong>Awards:</strong>
@@ -144,23 +165,31 @@
 
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/portfolio/hookup.jpg'>
+            <img src='assets/produced/hookup.jpg'>
           </div>
           <div class="description">
             <h2>HOOK-UP / ЗЙОМ</h2>
-            <p><strong>Director:</strong> Oleksandr Shapiro</p>
+            <p>
+              <strong>Director:</strong>
+              Oleksandr Shapiro
+            </p>
+            <p>
+              <strong>Script:</strong>
+                Oleksandr Shapiro
+            </p>
             <p>2008, feature, drama, Ukraine</p>
           </div>
         </div>
       </div>
 
-      <h1 class="section-title" id="distribution-title">Distribution</h1>
+      <div id="distribution-start"></div>
+      <h1 class="section-title">Distribution</h1>
       <hr>
-      <p id="distribution-description">We has released more than 100 films, both wide released indie and arthouse movies.</p>
+      <p id="distribution-description">We have released more than 100 films, both wide-release indie and arthouse movies.</p>
       <div id="distribution">
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/distribution/1.jpg'>
+            <img src='assets/distribution/3.jpg'>
           </div>
         </div>
         <div class="film-card">
@@ -170,7 +199,7 @@
         </div>
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/distribution/3.jpg'>
+            <img src='assets/distribution/8.jpg'>
           </div>
         </div>
         <div class="film-card">
@@ -185,33 +214,32 @@
         </div>
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/distribution/6.jpg'>
-          </div>
-        </div>
-        <div class="film-card">
-          <div class="poster-wrapper">
             <img src='assets/distribution/7.jpg'>
           </div>
         </div>
         <div class="film-card">
           <div class="poster-wrapper">
-            <img src='assets/distribution/8.jpg'>
+            <img src='assets/distribution/6.jpg'>
+          </div>
+        </div>
+        <div class="film-card">
+          <div class="poster-wrapper">
+            <img src='assets/distribution/1.jpg'>
           </div>
         </div>
 
       </div>
 
-
-      <!-- Distribution films 4 per row -->
-
-      <h1 class="section-title" id="about-title">About us</h1>
+      <div id="about-start"></div>
+      <h1 class="section-title" >About us</h1>
       <hr>
       <div id="about">
         <p>Film company PREMIER-MEDIA was founded in 1998 and specialized on advertising.</p>
         <p>Since 2007 the company is working in the field of independent film production and theatrical distribution of feature, documentary and short films.</p>
       </div>
 
-      <h1 class="section-title" id="team-title">Team</h1>
+      <div id="team-start"></div>
+      <h1 class="section-title">Team</h1>
       <hr>
       <div id="team">
         <div class="member">
@@ -247,49 +275,113 @@
         </div>
       </div>
 
+      <div id="contacts-start"></div>
+      <h1 class="section-title">Contacts</h1>
+      <hr>
       <div id="contacts">
-        <img src="assets/logo.png" class="footer-logo">
-        <p>Ukraine, 01001, Kyiv, Grushevsky str. 28/2 office 43</p>
+        <img src="assets/logo.png" class="contacts-logo">
+        <p class="addrees">Ukraine, 01001, Kyiv, Grushevsky str. 28/2 office 43</p>
+        <div class="social-networks">
+          <a href="#">
+            <img src="assets/icons/facebook.svg">
+          </a>
+          <a href="#">
+            <img src="assets/icons/instagram.svg">
+          </a>
+          <a href="#">
+            <img src="assets/icons/youtube.svg">
+          </a>
+        </div>
+      </div>
+
+      <div id="footer">
+        PREMIER-MEDIA ©2007-2019 All rights reserved.
       </div>
 
       <script type="text/javascript">
-        scrollTo = (element) => {
-          window.scroll({
-            behavior: 'smooth',
-            left: 0,
-            top: (element.offsetTop - 80)
+
+          var sideNav = document.getElementById("slide-out"),
+              sideNavVisible = true;
+
+          var menuButton = document.getElementById("menu")
+
+          function toggleSideNav() {
+            menuButton.classList.toggle('open');
+            if (sideNavVisible) {
+              sideNav.style.cssText = "transform: translateX(0); -webkit-transition: 0.5s;";
+            } else {
+              sideNav.style.cssText = "transform: translateX(-100%); -webkit-transition: 0.5s;";
+            }
+            sideNavVisible = !sideNavVisible;
+          }
+
+
+          // TODO: MAKE IT DRY!
+
+          window.addEventListener('load', function() {
+
+            var projects = document.querySelectorAll('.to-projects');
+
+            [].forEach.call(projects, function(project) {
+              project.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#projects-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
+
+            document.querySelector('#to-projects-from-arrow').addEventListener('click', function(e) {
+              e.preventDefault();
+              document.querySelector('#projects-start').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            var produced = document.querySelectorAll('.to-produced');
+
+            [].forEach.call(produced, function(produced) {
+              produced.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#produced-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
+            var distribution = document.querySelectorAll('.to-distribution');
+
+            [].forEach.call(distribution, function(distribution) {
+              distribution.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#distribution-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
+            var about = document.querySelectorAll('.to-about');
+
+            [].forEach.call(about, function(about) {
+              about.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#about-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
+
+            var team = document.querySelectorAll('.to-team');
+
+            [].forEach.call(team, function(team) {
+              team.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#team-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
+            var contacts = document.querySelectorAll('.to-contacts');
+
+            [].forEach.call(contacts, function(contacts) {
+              contacts.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#contacts-start').scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+
           });
-          console
-        }
-
-        document.getElementById("to-projects").addEventListener('click', () => {
-          scrollTo(document.getElementById("projects-title"));
-        });
-
-        document.getElementById("to-projects-from-arrow").addEventListener('click', () => {
-          scrollTo(document.getElementById("projects-title"));
-        });
-
-        document.getElementById("to-portfolio").addEventListener('click', () => {
-          scrollTo(document.getElementById("portfolio-title"));
-        });
-
-        document.getElementById("to-distribution").addEventListener('click', () => {
-          scrollTo(document.getElementById("distribution-title"));
-        });
-
-        document.getElementById("to-about").addEventListener('click', () => {
-          scrollTo(document.getElementById("about-title"));
-        });
-
-        document.getElementById("to-team").addEventListener('click', () => {
-          scrollTo(document.getElementById("team-title"));
-        });
-
-        document.getElementById("to-contacts").addEventListener('click', () => {
-          scrollTo(document.getElementById("contacts"));
-        });
-
       </script>
   </body>
 
