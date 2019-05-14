@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-    <script src="js/smoothscroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
@@ -18,12 +18,12 @@
         <a href="https://premiermediafilms.com/" id="logo">PREMIER-MEDIA</a>
 
         <ul class="desktop-menu">
-          <li><a class="to-projects">Projects</a></li>
-          <li><a class="to-produced">Produced</a></li>
-          <li><a class="to-distribution">Distribution</a></li>
-          <li><a class="to-about">About</a></li>
-          <li><a class="to-team">Team</a></li>
-          <li><a class="to-contacts">Contacts</a></li>
+          <li><a href="#projects-start">Projects</a></li>
+          <li><a href="#produced-start">Produced</a></li>
+          <li><a href="#distribution-start">Distribution</a></li>
+          <li><a href="#about-start">About</a></li>
+          <li><a href="#team-start">Team</a></li>
+          <li><a href="#contacts-start">Contacts</a></li>
         </ul>
 
         <div id='slide-out'>
@@ -317,74 +317,30 @@
             sideNavVisible = !sideNavVisible;
           }
 
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-          // TODO: MAKE IT DRY!
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-          window.addEventListener('load', function() {
+                // Store hash
+                var hash = this.hash;
 
-            var projects = document.querySelectorAll('.to-projects');
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
 
-            [].forEach.call(projects, function(project) {
-              project.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#projects-start').scrollIntoView({ behavior: 'smooth' });
-              });
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
             });
-
-
-            document.querySelector('#to-projects-from-arrow').addEventListener('click', function(e) {
-              e.preventDefault();
-              document.querySelector('#projects-start').scrollIntoView({ behavior: 'smooth' });
-            });
-
-            var produced = document.querySelectorAll('.to-produced');
-
-            [].forEach.call(produced, function(produced) {
-              produced.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#produced-start').scrollIntoView({ behavior: 'smooth' });
-              });
-            });
-
-            var distribution = document.querySelectorAll('.to-distribution');
-
-            [].forEach.call(distribution, function(distribution) {
-              distribution.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#distribution-start').scrollIntoView({ behavior: 'smooth' });
-              });
-            });
-
-            var about = document.querySelectorAll('.to-about');
-
-            [].forEach.call(about, function(about) {
-              about.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#about-start').scrollIntoView({ behavior: 'smooth' });
-              });
-            });
-
-
-            var team = document.querySelectorAll('.to-team');
-
-            [].forEach.call(team, function(team) {
-              team.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#team-start').scrollIntoView({ behavior: 'smooth' });
-              });
-            });
-
-            var contacts = document.querySelectorAll('.to-contacts');
-
-            [].forEach.call(contacts, function(contacts) {
-              contacts.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#contacts-start').scrollIntoView({ behavior: 'smooth' });
-              });
-            });
-
           });
       </script>
   </body>
-
 <html>
