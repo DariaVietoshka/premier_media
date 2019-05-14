@@ -1,0 +1,71 @@
+.movie-wrapper {
+  margin-top: 100px;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-wrapper .poster-side {
+  box-sizing: border-box;
+  flex: 0 25%;
+  padding: 30px;
+}
+
+.movie-wrapper .poster-side {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 30px 30px 30px;
+  border-radius: 8px;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+}
+
+.movie-wrapper .poster-side .details p {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.movie-wrapper .poster-side .details p strong {
+  color: #555;
+  letter-spacing: 1px;
+}
+
+
+.movie-wrapper .description-side {
+  box-sizing: border-box;
+  flex: 0 65%;
+  margin: 0 0 0 30px;
+}
+
+.movie-wrapper .description-side .description p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #555;
+  padding: 5px 0;
+}
+
+.movie-wrapper .description-side .description h2 {
+  margin-top: 0;
+  color: #555;
+}
+
+.movie-wrapper .description-side .description,
+.movie-wrapper .description-side .videos {
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+}
+
+.movie-wrapper .film-card {
+  margin: 0;
+  flex: none;
+}
+.movie-wrapper .details {
+  padding: 20px;
+}
+
+.movie-wrapper .film-card .poster-wrapper,
+.movie-wrapper .film-card .poster-wrapper img {
+  height: auto;
+  height: auto;
+}
