@@ -3,7 +3,6 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/movie.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,22 +19,22 @@
         <a href="https://premiermediafilms.com/" id="logo">PREMIER-MEDIA</a>
 
         <ul class="desktop-menu">
-          <li><a href="#projects-start">Projects</a></li>
-          <li><a href="#produced-start">Produced</a></li>
-          <li><a href="#distribution-start">Distribution</a></li>
-          <li><a href="#about-start">About</a></li>
-          <li><a href="#team-start">Team</a></li>
-          <li><a href="#contacts-start">Contacts</a></li>
+          <li><a href="https://premiermediafilms.com/#projects-start">Projects</a></li>
+          <li><a href="https://premiermediafilms.com/#produced-start">Produced</a></li>
+          <li><a href="https://premiermediafilms.com/#distribution-start">Distribution</a></li>
+          <li><a href="https://premiermediafilms.com/#about-start">About</a></li>
+          <li><a href="https://premiermediafilms.com/#team-start">Team</a></li>
+          <li><a href="https://premiermediafilms.com/#contacts-start">Contacts</a></li>
         </ul>
 
         <div id='slide-out'>
           <ul>
-            <li><a href="#projects-start">Projects</a></li>
-            <li><a href="#produced-start">Produced</a></li>
-            <li><a href="#distribution-start">Distribution</a></li>
-            <li><a href="#about-start">About</a></li>
-            <li><a href="#team-start">Team</a></li>
-            <li><a href="#contacts-start">Contacts</a></li>
+            <li><a href="https://premiermediafilms.com/#projects-start">Projects</a></li>
+            <li><a href="https://premiermediafilms.com/#produced-start">Produced</a></li>
+            <li><a href="https://premiermediafilms.com/#distribution-start">Distribution</a></li>
+            <li><a href="https://premiermediafilms.com/#about-start">About</a></li>
+            <li><a href="https://premiermediafilms.com/#team-start">Team</a></li>
+            <li><a href="https://premiermediafilms.com/#contacts-start">Contacts</a></li>
           </ul>
         </div>
 
@@ -91,5 +90,22 @@
       <div id="footer">
         PREMIER-MEDIA ©2007-2019 All rights reserved.
       </div>
+
+      <script type="text/javascript">
+        var sideNav = document.getElementById("slide-out"),
+            sideNavVisible = true;
+
+        var menuButton = document.getElementById("menu")
+
+        function toggleSideNav() {
+          menuButton.classList.toggle('open');
+          if (sideNavVisible) {
+            sideNav.style.cssText = "transform: translateX(0); -webkit-transition: 0.5s;";
+          } else {
+            sideNav.style.cssText = "transform: translateX(-100%); -webkit-transition: 0.5s;";
+          }
+          sideNavVisible = !sideNavVisible;
+        }
+      </script>
   </body>
 <html>
