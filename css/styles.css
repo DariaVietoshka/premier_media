@@ -545,3 +545,19 @@ hr {
     box-sizing: border-box;
   }
 }
+
+#projects-start {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+}
+
+#produced-start,
+#distribution-start,
+#about-start,
+#team-start,
+#contacts-start {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+}
