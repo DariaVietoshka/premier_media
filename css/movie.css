@@ -14,10 +14,10 @@
 
 .movie-wrapper .poster-side {
   box-sizing: border-box;
-  padding: 0;
+  padding: 11px 18px 0px 13px;
   margin: 0 30px 30px 30px;
   border-radius: 8px;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  box-shadow: 8px 4px 11px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.05);
 }
 
 .movie-wrapper .poster-side .details p {
@@ -55,22 +55,28 @@
 }
 
 .movie-wrapper .description-side .description h3 {
-  font-size: 22px;
+  font-size: 14px;
   line-height: 24px;
   color: #555;
   padding: 5px 0;
-  font-variant: all-petite-caps;
+  text-transform: uppercase;
   font-weight: 400;
   margin-top: 0;
 }
 
 .movie-wrapper .description-side .description,
 .movie-wrapper .description-side .videos {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 15px 35px;
+  margin-bottom: 50px;
   border-radius: 8px;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  box-shadow: 5px 3px 10px rgba(39,44,49,.09), 1px 3px 8px rgba(39,44,49,.03);
 }
+
+.movie-wrapper .description-side .videos {
+  padding: 17px 22px;
+}
+
+
 
 .movie-wrapper .film-card {
   margin: 0;
