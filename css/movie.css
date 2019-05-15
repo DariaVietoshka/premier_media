@@ -22,11 +22,16 @@
 
 .movie-wrapper .poster-side .details p {
   border-bottom: 1px solid #f2f2f2;
+  color: #555;
+  font-size: 15px;
+  padding-bottom: 6px;
 }
 
 .movie-wrapper .poster-side .details p strong {
-  color: #555;
-  letter-spacing: 1px;
+  color: #333;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 
@@ -38,14 +43,25 @@
 
 .movie-wrapper .description-side .description p {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 36px;
   color: #555;
   padding: 5px 0;
 }
 
 .movie-wrapper .description-side .description h2 {
   margin-top: 0;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.movie-wrapper .description-side .description h3 {
+  font-size: 22px;
+  line-height: 24px;
   color: #555;
+  padding: 5px 0;
+  font-variant: all-petite-caps;
+  font-weight: 400;
+  margin-top: 0;
 }
 
 .movie-wrapper .description-side .description,
@@ -77,5 +93,6 @@
 
   .movie-wrapper .description-side {
     flex: 0 100%;
+    margin: 30px;
   }
 }
