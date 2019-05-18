@@ -1,6 +1,5 @@
 .movie-wrapper {
   margin-top: 100px;
-  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,16 +88,67 @@
 .movie-wrapper .film-card .poster-wrapper,
 .movie-wrapper .film-card .poster-wrapper img {
   height: auto;
-  height: auto;
+}
+
+.mobile-movie-wrapper {
+  display: none;
 }
 
 @media (max-width: 845px) {
-  .movie-wrapper .poster-side {
+  .movie-wrapper {
+    display: none;
+  }
+
+  .mobile-movie-wrapper {
+    display: block;
+  }
+
+  /* Mobile styles for movie wrapper: */
+  /* .movie-wrapper .poster-side {
     flex: 0 100%;
   }
 
   .movie-wrapper .description-side {
     flex: 0 100%;
     margin: 30px;
+  } */
+
+
+  /* Mobiles styles for different DOM structure: */
+
+  .mobile-movie-wrapper {
+    margin-top: 120px;
+    padding: 30px;
   }
+
+  .mobile-movie-wrapper .movie-title-and-subtitle h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 0;
+  }
+
+  .mobile-movie-wrapper .movie-title-and-subtitle h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  .mobile-movie-wrapper .poster-wrapper,
+  .mobile-movie-wrapper .poster-wrapper img {
+    height: auto;
+    width: 100%;
+  }
+
+  .mobile-movie-wrapper .details p {
+   border-bottom: 1px solid #f2f2f2;
+   color: #555;
+   font-size: 15px;
+   padding-bottom: 6px;
+ }
+
+
 }
