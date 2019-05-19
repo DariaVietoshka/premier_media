@@ -1,19 +1,5 @@
 $(document).ready(function(){
-  var sideNav = document.getElementById("slide-out"),
-      sideNavVisible = true;
 
-  var menuButton = document.getElementById("menu")
-
-  function toggleSideNav() {
-    menuButton.classList.toggle('open');
-    if (sideNavVisible) {
-      sideNav.style.cssText = "transform: translateX(0); -webkit-transition: 0.5s;";
-    } else {
-      sideNav.style.cssText = "transform: translateX(-100%); -webkit-transition: 0.5s;";
-    }
-    sideNavVisible = !sideNavVisible;
-  }
-  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
