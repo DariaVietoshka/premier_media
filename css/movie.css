@@ -117,7 +117,7 @@
   /* Mobiles styles for different DOM structure: */
 
   .mobile-movie-wrapper {
-    margin-top: 120px;
+    margin-top: 60px;
     padding: 30px;
   }
 
@@ -148,6 +148,9 @@
    color: #555;
    font-size: 15px;
    padding-bottom: 6px;
+ }
+ .mobile-movie-wrapper .movie-description {
+   border-bottom: 1px solid #f2f2f2;
  }
 
 
