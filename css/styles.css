@@ -185,14 +185,19 @@ hr {
   justify-content: center;
 }
 
+
 .film-card {
   width: 100%;
-  flex: 0 20%;
   box-sizing: border-box;
   margin: 20px;
+  flex: 0 20%;
   border-radius: 8px;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   transition: all .5s ease;
+}
+
+#projects .film-card {
+  flex: 0 23%;
 }
 
 .film-card:hover {
