@@ -196,10 +196,6 @@ hr {
   transition: all .5s ease;
 }
 
-#projects .film-card {
-  flex: 0 23%;
-}
-
 .film-card:hover {
   box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
   transition: all .4s ease;
@@ -462,6 +458,12 @@ hr {
   transform: scale(0);
 }
 
+@media (min-width: 845px) {
+  #projects .film-card {
+    flex: 0 23%;
+  }
+}
+
 @media (max-width: 845px) {
   .parallax {
     background-attachment: unset;
@@ -509,10 +511,6 @@ hr {
     flex: 0 40%;
   }
 
-  #projects .film-card {
-    flex: 0 40%;
-  }
-
   #intro {
     height: calc(100vh);
   }
@@ -538,9 +536,6 @@ hr {
     flex: 0 100%;
   }
 
-  #projects .film-card {
-    flex: 0 100%;
-  }
 
   .film-card img {
     height: auto;
