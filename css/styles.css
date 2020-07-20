@@ -509,6 +509,10 @@ hr {
     flex: 0 40%;
   }
 
+  #projects .film-card {
+    flex: 0 40%;
+  }
+
   #intro {
     height: calc(100vh);
   }
@@ -531,6 +535,10 @@ hr {
   }
 
   .film-card {
+    flex: 0 100%;
+  }
+
+  #projects .film-card {
     flex: 0 100%;
   }
 
