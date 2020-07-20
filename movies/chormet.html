@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/movie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <title>Чормет / Chormet</title>
+  </head>
+
+  <body>
+
+      <div class="navbar">
+        <a href="https://premiermediafilms.com/">
+          <img src="../assets/logo.png" class="image-logo">
+        </a>
+        <a href="https://premiermediafilms.com/" id="logo">PREMIER-MEDIA</a>
+
+        <ul class="desktop-menu">
+          <li><a href="https://premiermediafilms.com/#projects-start">Projects</a></li>
+          <li><a href="https://premiermediafilms.com/#produced-start">Produced</a></li>
+          <li><a href="https://premiermediafilms.com/#distribution-start">Distribution</a></li>
+          <li><a href="https://premiermediafilms.com/#about-start">About</a></li>
+          <li><a href="https://premiermediafilms.com/#team-start">Team</a></li>
+          <li><a href="https://premiermediafilms.com/#contacts-start">Contacts</a></li>
+        </ul>
+
+        <div id='slide-out'>
+          <ul>
+            <li><a href="https://premiermediafilms.com/#projects-start">Projects</a></li>
+            <li><a href="https://premiermediafilms.com/#produced-start">Produced</a></li>
+            <li><a href="https://premiermediafilms.com/#distribution-start">Distribution</a></li>
+            <li><a href="https://premiermediafilms.com/#about-start">About</a></li>
+            <li><a href="https://premiermediafilms.com/#team-start">Team</a></li>
+            <li><a href="https://premiermediafilms.com/#contacts-start">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div onclick="toggleSideNav()" class="nav-icon menu" id="menu">
+          <div></div>
+        </div>
+
+      </div>
+
+      <div class="movie-wrapper">
+        <div class="poster-side">
+          <div class="film-card">
+            <div class="poster-wrapper">
+              <img src='../assets/projects/chormet.jpg'>
+            </div>
+          </div>
+          <div class="details">
+            <p>
+              <strong>Director:</strong>
+              Оксана Войтенко
+            </p>
+            <p>
+              <strong>Script:</strong>
+                Оксана Войтенко
+            </p>
+            <p><strong>Producer: </strong>Руслан Товкун / Ruslan Tovkun</p>
+          </div>
+        </div>
+        <div class="description-side">
+          <div class="description">
+            <h2>Чормет / Chormet</h2>
+            <h3>2022 / drama / 90 min / Ukraine</h3>
+
+            <p>Алік, колишній ліквідатор, живе біля Зони, збираючи чорний метал, але в його житті
+з’являється жінка. Щоб врятувати її від кримінального авторитету, Алік вирушає в ризиковану
+подорож в Зону.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-movie-wrapper">
+
+          <div class="movie-title-and-subtitle">
+            <h2>Чормет / Chormet</h2>
+            <h3>2022 / drama / 90 min / Ukraine</h3>
+          </div>
+
+          <div class="poster-wrapper">
+            <img src='../assets/projects/chormet.jpg'>
+          </div>
+
+          <div class="movie-description">
+            <p>Алік, колишній ліквідатор, живе біля Зони, збираючи чорний метал, але в його житті
+з’являється жінка. Щоб врятувати її від кримінального авторитету, Алік вирушає в ризиковану
+подорож в Зону.</p>
+          </div>
+
+          <div class="details">
+            <p>
+              <strong>Director:</strong>
+              Оксана Войтенко
+            </p>
+            <p>
+              <strong>Script:</strong>
+                Оксана Войтенко
+            </p>
+            <p><strong>Producer: </strong>Руслан Товкун / Ruslan Tovkun</p>
+          </div>
+
+      </div>
+
+      <div id="footer">
+        PREMIER-MEDIA ©2007-2019 All rights reserved.
+      </div>
+
+      <script type="text/javascript">
+        var sideNav = document.getElementById("slide-out"),
+            sideNavVisible = true;
+
+        var menuButton = document.getElementById("menu")
+
+        function toggleSideNav() {
+          menuButton.classList.toggle('open');
+          if (sideNavVisible) {
+            sideNav.style.cssText = "transform: translateX(0); -webkit-transition: 0.5s;";
+          } else {
+            sideNav.style.cssText = "transform: translateX(-100%); -webkit-transition: 0.5s;";
+          }
+          sideNavVisible = !sideNavVisible;
+        }
+      </script>
+  </body>
+<html>
